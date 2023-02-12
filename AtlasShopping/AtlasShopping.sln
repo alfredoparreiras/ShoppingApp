@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtlasShopping", "AtlasShopping.csproj", "{B5D6CA53-B916-4681-BFDA-15A6630AFB87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5D6CA53-B916-4681-BFDA-15A6630AFB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D6CA53-B916-4681-BFDA-15A6630AFB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D6CA53-B916-4681-BFDA-15A6630AFB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D6CA53-B916-4681-BFDA-15A6630AFB87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C3F32C1-2660-4867-8881-B2F0C6697FBE}
+	EndGlobalSection
+EndGlobal
