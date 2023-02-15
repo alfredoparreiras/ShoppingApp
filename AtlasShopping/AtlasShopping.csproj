@@ -8,9 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\binary-code.png" />
+    <None Remove="Images\DevEmporium-removebg-preview.png" />
+    <None Remove="Images\lock.png" />
     <None Remove="Images\login-bg.jpg" />
     <None Remove="Images\login.png" />
     <None Remove="Images\password.png" />
+    <None Remove="Images\shop.png" />
+    <None Remove="Images\user.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,8 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\binary-code.png" />
+    <Resource Include="Images\DevEmporium-removebg-preview.png" />
+    <Resource Include="Images\lock.png" />
     <Resource Include="Images\login-bg.jpg" />
-    <Resource Include="Images\password.png" />
+    <Resource Include="Images\shop.png" />
+    <Resource Include="Images\user.png" />
   </ItemGroup>
 
 </Project>

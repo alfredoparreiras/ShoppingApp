@@ -116,8 +116,9 @@
                 <StackPanel Width="350"
                             Grid.Row="2"
                             Orientation="Vertical"
-                            Margin="0,35,0,0">
-                    <StackPanel Orientation="Horizontal" >
+                            Margin="0,35,0,0"
+                            HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="center" >
                         <Image Source="/Images/binary-code.png" Width="50" />
                         <Separator Background="Transparent" Width="20"/>
                         <TextBlock Text="DevEmporium"
@@ -129,13 +130,14 @@
                     <Separator Background="Transparent" Height="0"/>
 
                     <TextBlock Text="Shop smarter, code better at DevEmporium."
-                                   HorizontalAlignment="Stretch"
-                                   FontSize="18"
+                                   HorizontalAlignment="Center"
+                                   FontSize="16"
                                    Foreground="#DAE2E7"
-                                   Margin="0,0,0,10"
+                                   Margin="10,0,0,10"
                                    TextAlignment="Justify"/>
                     <Separator Background="Transparent" Height="40"/>
-                    <StackPanel Margin="15,0,0,0">
+                    <StackPanel Margin="0,0,0,0" 
+                                HorizontalAlignment="Center">
                         <TextBlock Text="Username"
                                        HorizontalAlignment="Stretch"
                                        FontSize="12"
@@ -169,7 +171,7 @@
                             <Image Source="/Images/lock.png" Height="20"/>
                             <Separator Background="Transparent" Width="20"/>
 
-                            <TextBox x:Name="txtPassword"
+                            <PasswordBox x:Name="txtPassword"
                                 Width="200"
                                 FontSize="13"
                                 FontWeight="Medium"
@@ -179,9 +181,85 @@
                                 BorderBrush="DarkCyan"
                                 BorderThickness="0,0,0,2"
                                 VerticalContentAlignment="Center"
-                                Margin="0,5,0,0" Height="28" TextChanged="txtUser_TextChanged">
-                            </TextBox>
+                                Margin="0,5,0,0" Height="28">
+                            </PasswordBox>
                         </StackPanel>
+                        <Separator Background="Transparent" Height="30"/>
+
+                        <Button x:Name="btnLogin"
+                            Background="#DAE2E7"
+                            Content="Log In"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            Foreground="black"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="btn_Minimize_Click">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="blue"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="true">
+                                            <Setter Property="Background" Value="Yellow"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="150" Height="28"
+                                        CornerRadius="14"
+                                        Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                                       HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Separator Background="Transparent" Height="05"/>
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Center">
+                            <TextBlock Text="Forgot Password?"
+                                       Foreground="#DAE2E7"
+                                       FontSize="10"/>
+                            <Separator Background="Transparent" Width="15"/>
+                            <TextBlock Text="Reset" 
+                                       HorizontalAlignment="Center"
+                                       Foreground="#DAE2E7"
+                                       FontSize="10"/>
+                        </StackPanel>
+                        <Separator Background="Transparent" Height="35"/>
+                        <Button x:Name="btnSignup"
+                            Background="#DAE2E7"
+                            Content="Sign Up"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            Foreground="black"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="1">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#DAE2E7"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="true">
+                                            <Setter Property="Background" Value="Yellow"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="150" Height="28"
+                                        CornerRadius="14"
+                                        Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                                       HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
 
                     </StackPanel>
                 </StackPanel>
