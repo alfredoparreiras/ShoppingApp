@@ -7,4 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\login-bg.jpg" />
+    <None Remove="Images\login.png" />
+    <None Remove="Images\password.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Utility\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\login-bg.jpg" />
+    <Resource Include="Images\password.png" />
+  </ItemGroup>
+
 </Project>

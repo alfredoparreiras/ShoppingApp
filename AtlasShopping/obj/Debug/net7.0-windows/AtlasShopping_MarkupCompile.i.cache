@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 Y:\ShoppingApp\AtlasShopping\App.xaml
-21819176243
+2-1323765147
 
-61116009330
+10-2000406294
 1981911467256
-Views\Login.xaml;Views\MainWindow.xaml;
+Views\LoginView.xaml;Views\MainWindow.xaml;
 
-True
+False
 
