@@ -11,9 +11,10 @@
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="true"
         Background="Transparent"
-        MouseDown="Window_MouseDown">
-    <Border CornerRadius="55">
-        <Border CornerRadius="50"
+        MouseDown="Window_MouseDown"
+        >
+    <Border CornerRadius="20">
+        <Border CornerRadius="20"
                 BorderThickness="5"
                 Opacity="0.95">
             <Border.BorderBrush>
@@ -39,7 +40,6 @@
                         <ColumnDefinition/>
                         <ColumnDefinition Width="35"/>
                         <ColumnDefinition Width="35"/>
-                        <ColumnDefinition Width="25"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="Log In"
                                Foreground="#DAE2E7"
@@ -47,7 +47,7 @@
                                FontFamily="Montserrat"
                                Grid.Column="0"
                                VerticalAlignment="Center"
-                               Margin="30,0,0,0"/>
+                               Margin="10,0,0,0"/>
 
                     <Button x:Name="btnMinimize"
                             Background="#202B31"
@@ -83,8 +83,8 @@
 
                     <Button x:Name="btnClose"
                             Background="#202B31"
-                            FontSize="12"
-                            FontWeight="Bold"
+                            FontSize="10"
+                            FontWeight="SemiBold"
                             Content="X"
                             Foreground="white"
                             FontFamily="Montserrat"
@@ -119,13 +119,13 @@
                             Margin="0,35,0,0"
                             HorizontalAlignment="Center">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="center" >
-                        <Image Source="/Images/binary-code.png" Width="50" />
+                        <Image Source="/Images/binary-code.png" Width="50" RenderOptions.BitmapScalingMode="HighQuality" />
                         <Separator Background="Transparent" Width="20"/>
                         <TextBlock Text="DevEmporium"
                                    HorizontalAlignment="Center"
                                    FontSize="38"
                                    Foreground="#DAE2E7"
-                                   Margin="0,0,0,10"/>
+                                   Margin="0,0,0,10" FontFamily="Gadugi"/>
                     </StackPanel>
                     <Separator Background="Transparent" Height="0"/>
 
@@ -134,7 +134,7 @@
                                    FontSize="16"
                                    Foreground="#DAE2E7"
                                    Margin="10,0,0,10"
-                                   TextAlignment="Justify"/>
+                                   TextAlignment="Justify" FontFamily="Gadugi"/>
                     <Separator Background="Transparent" Height="40"/>
                     <StackPanel Margin="0,0,0,0" 
                                 HorizontalAlignment="Center">
@@ -146,7 +146,7 @@
                                    TextAlignment="Justify" FontFamily="Leelawadee UI"/>
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Images/user.png" Height="20"/>
-                            <Separator Background="Transparent" Width="20"/>
+                            <Separator Background="Transparent"/>
                             <TextBox x:Name="txtUser"
                                 Width="200"
                                 FontSize="13"
@@ -168,8 +168,8 @@
                                    Margin="0,0,0,10"
                                    TextAlignment="Justify" FontFamily="Leelawadee UI"/>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/Images/lock.png" Height="20"/>
-                            <Separator Background="Transparent" Width="20"/>
+                            <Image Source="/Images/lock.png" Height="20" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            <Separator Background="Transparent"/>
 
                             <PasswordBox x:Name="txtPassword"
                                 Width="200"
@@ -227,39 +227,24 @@
                             <TextBlock Text="Reset" 
                                        HorizontalAlignment="Center"
                                        Foreground="#DAE2E7"
-                                       FontSize="10"/>
+                                       FontSize="10"
+                                       TextDecorations="Underline"/>
                         </StackPanel>
-                        <Separator Background="Transparent" Height="35"/>
-                        <Button x:Name="btnSignup"
-                            Background="#DAE2E7"
-                            Content="Sign Up"
-                            FontSize="14"
-                            FontWeight="Bold"
-                            Foreground="black"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Grid.Column="1">
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="#DAE2E7"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="true">
-                                            <Setter Property="Background" Value="Yellow"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <Button.Template>
-                                <ControlTemplate TargetType="Button">
-                                    <Border Width="150" Height="28"
-                                        CornerRadius="14"
-                                        Background="{TemplateBinding Background}">
-                                        <ContentPresenter VerticalAlignment="Center"
-                                                       HorizontalAlignment="Center"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Button.Template>
-                        </Button>
+                        <Separator Background="Transparent" Height="15"/>
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Center">
+                            <TextBlock Text="Don't Have an Account?"
+                                       Foreground="#DAE2E7"
+                                       FontSize="10"/>
+                            <Separator Background="Transparent" Width="15"/>
+                            <TextBlock Text="Create" 
+                                       HorizontalAlignment="Center"
+                                       Foreground="#DAE2E7"
+                                       FontSize="10"
+                                       TextDecorations="Underline"/>
+                        </StackPanel>
+                        <Separator Background="Transparent" Height="15"/>
+
 
                     </StackPanel>
                 </StackPanel>

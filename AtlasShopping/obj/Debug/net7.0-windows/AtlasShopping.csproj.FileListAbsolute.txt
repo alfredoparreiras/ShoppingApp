@@ -21,3 +21,5 @@ Y:\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\refint\AtlasShopping.dll
 Y:\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\AtlasShopping.pdb
 Y:\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\AtlasShopping.genruntimeconfig.cache
 Y:\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\ref\AtlasShopping.dll
+Y:\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\Store.g.cs
+Y:\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\Store.baml
