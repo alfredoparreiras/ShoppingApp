@@ -1,15 +1,16 @@
+using Chevalier.Utility.ViewModels;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.InteropServices.JavaScript;
 
 
-namespace AtlasShoppingConsole
+namespace AtlasShopping.Models
 {
-    public class Product
+    public class Product : ViewModel
     {
         //Properties
         public int Id { get; }
         public decimal Price { get; private set; }
-        public string ItemName { get; set; }
+        public string ProductName { get; set; }
         public string Category { get; set; }
         
         //Class Fields
@@ -19,14 +20,14 @@ namespace AtlasShoppingConsole
         {
             Price = price;
             Id = _nextId++;
-            ItemName = itemName;
+            ProductName = itemName;
             Category = category;
 
         }
 
         public override string ToString()
         {
-            return $"The product {ItemName}\n" +
+            return $"The product {ProductName}\n" +
                    $"Cost {Price}\n" +
                    $"And belong to {Category}\n";
         }

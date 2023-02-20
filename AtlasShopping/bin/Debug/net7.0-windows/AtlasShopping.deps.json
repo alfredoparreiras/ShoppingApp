@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "AtlasShopping/1.0.0": {
+        "dependencies": {
+          "Chevalier.Utility": "1.0.0"
+        },
         "runtime": {
           "AtlasShopping.dll": {}
+        }
+      },
+      "Chevalier.Utility/1.0.0": {
+        "runtime": {
+          "Chevalier.Utility.dll": {}
         }
       }
     }
   },
   "libraries": {
     "AtlasShopping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Chevalier.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

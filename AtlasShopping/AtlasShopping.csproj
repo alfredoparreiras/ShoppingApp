@@ -8,11 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Utility\**" />
+    <EmbeddedResource Remove="Utility\**" />
+    <None Remove="Utility\**" />
+    <Page Remove="Utility\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Images\binary-code.png" />
     <None Remove="Images\DevEmporium-removebg-preview.png" />
     <None Remove="Images\lock.png" />
     <None Remove="Images\login-bg.jpg" />
     <None Remove="Images\login.png" />
+    <None Remove="Images\mechanicalKeyboard.jpg" />
     <None Remove="Images\password.png" />
     <None Remove="Images\shop.png" />
     <None Remove="Images\user.png" />
@@ -20,7 +28,10 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Utility\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\D05-Web2209A-Alfredo\CourseNotesAssignments\Utility\Chevalier.Utility\Chevalier.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +39,7 @@
     <Resource Include="Images\DevEmporium-removebg-preview.png" />
     <Resource Include="Images\lock.png" />
     <Resource Include="Images\login-bg.jpg" />
+    <Resource Include="Images\mechanicalKeyboard.jpg" />
     <Resource Include="Images\shop.png" />
     <Resource Include="Images\user.png" />
   </ItemGroup>

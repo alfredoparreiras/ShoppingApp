@@ -1,8 +1,10 @@
+using AtlasShopping;
+using Chevalier.Utility.ViewModels;
 using System.Collections.Generic;
 
-namespace AtlasShoppingConsole
+namespace AtlasShopping.Models
 {
-    public class Store
+    public class Store : ViewModel
     {
 
         public string StoreName { get; private set; }

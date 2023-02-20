@@ -1,8 +1,10 @@
+using AtlasShopping;
+using Chevalier.Utility.ViewModels;
 using System.Collections.Generic;
 
-namespace AtlasShoppingConsole
+namespace AtlasShopping.Models
 {
-    public class Cart
+    public class Cart : ViewModel
     {
         // Properties
         public int OrderId { get; }

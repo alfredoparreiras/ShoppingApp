@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-Y:\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\
 AtlasShopping
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-Y:\ShoppingApp\AtlasShopping\App.xaml
-3-2007955588
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\App.xaml
+41039318973
 
-111983704956
-1981911467256
-Views\LoginView.xaml;Views\MainWindow.xaml;Views\Store.xaml;
+12135034558
+199-105592716
+Views\LoginView.xaml;Views\MainWindow.xaml;Views\ProductView.xaml;Views\StoreView.xaml;
 
 True
 
