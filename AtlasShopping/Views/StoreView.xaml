@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Store" 
         Height="650" 
-        Width="900"
+        Width="1000"
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -116,7 +116,7 @@
                     </Button>
                 </Grid>
                 <DockPanel Grid.Row="1">
-                    <DataGrid Width="350"
+                    <DataGrid Width="450"
                               Height="550"
                               HorizontalAlignment="Left"
                               Margin="40 20 0 0"
@@ -126,20 +126,23 @@
                               SelectedItem="{Binding Path=SelectedProduct}">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Product"
-                                                Width="120"
+                                                Width="145"
                                                 IsReadOnly="True"
-                                                Binding="{Binding Path=ProductName, UpdateSourceTrigger=PropertyChanged}"/>
+                                                Binding="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"/>
                             <DataGridTextColumn Header="Price"
-                                                Width="90"
+                                                Width="120"
                                                 IsReadOnly="True"
                                                 Binding="{Binding Path=Price,UpdateSourceTrigger=PropertyChanged}"/>
                             <DataGridTextColumn Header="Category"
-                                                Width="140"
+                                                Width="180"
                                                 IsReadOnly="True"
                                                 Binding="{Binding Path=Category,UpdateSourceTrigger=PropertyChanged}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <local:ProductView Margin="0 20 -20 0"/>
+                    <local:ProductView Margin="0 20 -20 0"
+                                        x:Name="productViewPanel"
+                                        x:FieldModifier="private"
+                                        Visibility="Collapsed"/>
                 </DockPanel>
             </Grid>
         </Border>

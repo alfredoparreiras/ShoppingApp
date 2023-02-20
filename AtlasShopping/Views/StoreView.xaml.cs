@@ -1,5 +1,4 @@
 ﻿using AtlasShopping.ViewModels;
-using AtlasShopping.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Diagnostics;
+using AtlasShopping.Models;
 
 namespace AtlasShopping.Views
 {
@@ -24,7 +25,15 @@ namespace AtlasShopping.Views
         public StoreView()
         {
             InitializeComponent();
-            DataContext = new StoreListViewModel();
+            StoreListViewModel storeViewModel = new StoreListViewModel();
+            storeViewModel.SelectedProductChanged += OnSelectedProductChanged;
+            DataContext = storeViewModel;
+        }
+
+        private void OnSelectedProductChanged(Product product)
+        {
+            // TODO If else
+            productViewPanel.Visibility = Visibility.Visible;
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
