@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\App.xaml
-61446777160
+72056763109
 
-12933390482
-199-105592716
-Views\LoginView.xaml;Views\MainWindow.xaml;Views\ProductView.xaml;Views\ResetPasswordView.xaml;Views\SignUpView.xaml;Views\StoreView.xaml;
+15738886327
+201335960324
+Views\CartView.xaml;Views\LoginView.xaml;Views\MainWindow.xaml;Views\ProductView.xaml;Views\ResetPasswordView.xaml;Views\SignUpView.xaml;Views\StoreView.xaml;
 
 False
 

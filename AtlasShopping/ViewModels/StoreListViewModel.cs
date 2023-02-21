@@ -26,9 +26,7 @@ namespace AtlasShopping.ViewModels
                 NotifyPropertyChanged(nameof(SelectedProduct));
             }
         }
-
         public DelegateCommand BuyCommand { get; }
-
 
         //Fields
         private Product _selectedProduct;
@@ -39,13 +37,7 @@ namespace AtlasShopping.ViewModels
         {
             Products = new ObservableCollection<Product>();
 
-            var mouse = new Product(15.99m, "Mouse", "Computer Accessories", "Amazing Mouse");
-            var computer = new Product(1599.32m, "PC", "Computer Accessories", "Amazing Computer");
-            var display = new Product(599.12m, "Monitor 32pol", "Computer Accessories", "Amazing Monitor");
-
-            Products.Add(mouse);
-            Products.Add(computer);
-            Products.Add(display);
+  
         }
         
 

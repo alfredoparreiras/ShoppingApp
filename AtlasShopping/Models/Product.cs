@@ -13,17 +13,17 @@ namespace AtlasShopping.Models
         public string Name { get; set; }
         public string Category { get; set; }
         public string Description { get; set; }
-        
-        //Class Fields
-        private static int _nextId = 1;
+        public string Url { get; set; }
+       
 
-        public Product(decimal price, string itemName, string category, string description)
+        public Product(int id, decimal price, string name, string url, string description, string category)
         {
             Price = price;
-            Id = _nextId++;
-            Name = itemName;
+            Id = id;
+            Name = name;
             Category = category;
             Description = description;
+            Url = url;
 
         }
 

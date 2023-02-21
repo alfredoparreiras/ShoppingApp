@@ -23,6 +23,35 @@ namespace AtlasShopping.Views
         public MainWindow()
         {
             InitializeComponent();
+            LoginView loginView = new LoginView();
+            loginView.ResetPasswordRequested += OnResetPasswordRequested;
+           
         }
+
+        private void OnResetPasswordRequested(Object sender)
+        {
+            if(loginView.Visibility == Visibility.Visible)
+            {
+                _ = loginView.Visibility == Visibility.Collapsed;
+                _ = resetPassword.Visibility == Visibility.Visible;
+            }
+        }
+
+        private void btn_Minimize_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void btn_Close_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+        }
+
     }
 }

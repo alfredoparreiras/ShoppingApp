@@ -58,3 +58,12 @@ C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\V
 C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\SignUpView.g.cs
 C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\ResetPasswordView.baml
 C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\SignUpView.baml
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\CartView.g.cs
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\CartView.baml
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\bin\Debug\net7.0-windows\AtlasShopping.dll.config
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

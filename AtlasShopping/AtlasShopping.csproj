@@ -27,10 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\D05-Web2209A-Alfredo\CourseNotesAssignments\Utility\Chevalier.Utility\Chevalier.Utility.csproj" />
   </ItemGroup>
 
@@ -42,6 +38,11 @@
     <Resource Include="Images\mechanicalKeyboard.jpg" />
     <Resource Include="Images\shop.png" />
     <Resource Include="Images\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
 </Project>
