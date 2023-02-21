@@ -77,7 +77,7 @@ namespace AtlasShopping.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AtlasShopping;V1.0.0.0;component/views/storeview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AtlasShopping;component/views/storeview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\StoreView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

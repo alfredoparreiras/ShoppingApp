@@ -8,6 +8,12 @@
     <Compile Update="Views\ProductView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ResetPasswordView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SignUpView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\StoreView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +23,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ProductView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ResetPasswordView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SignUpView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\StoreView.xaml">

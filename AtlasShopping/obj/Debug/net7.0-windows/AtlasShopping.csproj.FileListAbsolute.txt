@@ -54,3 +54,7 @@ C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\r
 C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\AtlasShopping.pdb
 C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\AtlasShopping.genruntimeconfig.cache
 C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\ref\AtlasShopping.dll
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\ResetPasswordView.g.cs
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\SignUpView.g.cs
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\ResetPasswordView.baml
+C:\Users\aalfr\source\repos\ShoppingApp\AtlasShopping\obj\Debug\net7.0-windows\Views\SignUpView.baml

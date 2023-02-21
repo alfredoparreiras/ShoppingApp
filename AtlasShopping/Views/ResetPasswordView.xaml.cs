@@ -24,10 +24,5 @@ namespace AtlasShopping.Views
         {
             InitializeComponent();
         }
-
-        private void btn_Minimize_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
