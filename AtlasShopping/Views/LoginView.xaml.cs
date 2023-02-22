@@ -18,19 +18,34 @@ namespace AtlasShopping.Views
     /// <summary>
     /// Interaction logic for LoginView.xaml
     /// </summary>
-    public delegate void ResetPasswordHandler(Object sender);
+    public delegate void NavigationHandler();
     public partial class LoginView : UserControl
     {
-        public event ResetPasswordHandler ResetPasswordRequested;
+        public event NavigationHandler ResetPasswordRequested;
+        public event NavigationHandler LogInRequested;
+        public event NavigationHandler CreateAccountRequested;
         public LoginView()
         {
             InitializeComponent();
         }
-        private void OnResetButtomClick(Object sender,RoutedEventArgs e)
+        private void OnResetButtonClick(Object sender,RoutedEventArgs e)
         {
-            ResetPasswordRequested?.Invoke(sender);
+            ResetPasswordRequested?.Invoke();
         }
 
+        private void OnLogInButtonClick(object sender, RoutedEventArgs e)
+        {
+            // Just work if its successfully loged in
 
+            if (true)
+            {
+                LogInRequested?.Invoke();
+            }
+        }
+
+        private void OnCreateButtonClick(object sender, RoutedEventArgs e)
+        {
+            CreateAccountRequested?.Invoke();
+        }
     }
 }

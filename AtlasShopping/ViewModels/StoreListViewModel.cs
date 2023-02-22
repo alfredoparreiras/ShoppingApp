@@ -37,6 +37,7 @@ namespace AtlasShopping.ViewModels
         {
             Products = new ObservableCollection<Product>();
 
+            Products.Add(new Product(100, 199.20m, "Mechanical Keyboard", "xpto", "Amazing Keyboard", "Computer Accessories"));
   
         }
         

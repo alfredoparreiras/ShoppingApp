@@ -27,10 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\D05-Web2209A-Alfredo\CourseNotesAssignments\Utility\Chevalier.Utility\Chevalier.Utility.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Images\binary-code.png" />
     <Resource Include="Images\DevEmporium-removebg-preview.png" />
     <Resource Include="Images\lock.png" />
@@ -43,6 +39,10 @@
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\D05-Web2209A\Utility\Chevalier.Utility\Chevalier.Utility.csproj" />
   </ItemGroup>
 
 </Project>

@@ -117,7 +117,8 @@
                             Foreground="black"
                             FontFamily="Montserrat"
                             Cursor="Hand"
-                            Grid.Column="1">
+                            Grid.Column="1"
+                            Click="OnLogInButtonClick">
                             <Button.Style>
                                 <Style TargetType="Button">
                                     <Setter Property="Background" Value="blue"/>
@@ -161,7 +162,7 @@
                             FontFamily="Montserrat"
                             Cursor="Hand"
                             Grid.Column="1"
-                            Click="OnResetButtomClick">
+                            Click="OnResetButtonClick">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border Width="50" Height="18"
@@ -181,11 +182,27 @@
                                        Foreground="#DAE2E7"
                                        FontSize="10"/>
                             <Separator Background="Transparent" Width="15"/>
-                            <TextBlock Text="Create" 
-                                       HorizontalAlignment="Center"
-                                       Foreground="#DAE2E7"
-                                       FontSize="10"
-                                       TextDecorations="Underline"/>
+                            <Button x:Name="createAccountButton"
+                            Background="#DAE2E7"
+                            Content="Create"
+                            FontSize="10"
+                            FontWeight="Bold"
+                            Foreground="White"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="OnCreateButtonClick">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Width="50" Height="18"
+                                        CornerRadius="14"
+                                        Background="Transparent">
+                                            <ContentPresenter VerticalAlignment="Center"
+                                                              HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
                         </StackPanel>
                         <Separator Background="Transparent" Height="15"/>
 

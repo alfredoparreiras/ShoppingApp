@@ -67,5 +67,25 @@ namespace AtlasShopping.Repository
 
             return products;
         }
+
+        public List<Product> GetProductsByName(string name)
+        {
+            using SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+
+            using SqlCommand command = connection.CreateCommand();
+            command.CommandText = "SELECT Id, Name, Price, Description, Url, Category " +
+                                  "FROM Products " +
+                                  "WHERE Name LIKE '%@name%'";
+
+            command.Parameters.Add("@name", SqlDbType.NChar).Value = name;
+
+            using SqlDataReader reader = command.ExecuteReader();
+            List<Product> products = new List<Product>();
+            while (reader.Read())
+                products.Add(ReadNextProduct(reader)); // TODO : Isn't working
+
+            return products;
+        }
     }
 }

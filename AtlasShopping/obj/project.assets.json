@@ -847,8 +847,8 @@
     },
     "Chevalier.Utility/1.0.0": {
       "type": "project",
-      "path": "../../D05-Web2209A-Alfredo/CourseNotesAssignments/Utility/Chevalier.Utility/Chevalier.Utility.csproj",
-      "msbuildProject": "../../D05-Web2209A-Alfredo/CourseNotesAssignments/Utility/Chevalier.Utility/Chevalier.Utility.csproj"
+      "path": "../../D05-Web2209A/Utility/Chevalier.Utility/Chevalier.Utility.csproj",
+      "msbuildProject": "../../D05-Web2209A/Utility/Chevalier.Utility/Chevalier.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -891,8 +891,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\aalfr\\source\\repos\\D05-Web2209A-Alfredo\\CourseNotesAssignments\\Utility\\Chevalier.Utility\\Chevalier.Utility.csproj": {
-              "projectPath": "C:\\Users\\aalfr\\source\\repos\\D05-Web2209A-Alfredo\\CourseNotesAssignments\\Utility\\Chevalier.Utility\\Chevalier.Utility.csproj"
+            "C:\\Users\\aalfr\\source\\repos\\D05-Web2209A\\Utility\\Chevalier.Utility\\Chevalier.Utility.csproj": {
+              "projectPath": "C:\\Users\\aalfr\\source\\repos\\D05-Web2209A\\Utility\\Chevalier.Utility\\Chevalier.Utility.csproj"
             }
           }
         }

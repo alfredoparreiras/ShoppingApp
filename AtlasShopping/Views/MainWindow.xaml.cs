@@ -23,17 +23,40 @@ namespace AtlasShopping.Views
         public MainWindow()
         {
             InitializeComponent();
-            LoginView loginView = new LoginView();
             loginView.ResetPasswordRequested += OnResetPasswordRequested;
-           
+            loginView.LogInRequested += OnLogedInRequested;
+            loginView.CreateAccountRequested += OnCreateAccountRequested;
+ 
         }
 
-        private void OnResetPasswordRequested(Object sender)
+        private void OnCreateAccountRequested()
         {
             if(loginView.Visibility == Visibility.Visible)
             {
-                _ = loginView.Visibility == Visibility.Collapsed;
-                _ = resetPassword.Visibility == Visibility.Visible;
+                loginView.Visibility = Visibility.Collapsed;
+                SignUpView.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void OnLogedInRequested()
+        {
+            // Create the new window
+            StoreView storeView = new StoreView();
+
+            // Show the window
+            storeView.Show();
+            // Close the window
+
+            Close();
+            
+        }
+
+        private void OnResetPasswordRequested()
+        {
+            if(loginView.Visibility == Visibility.Visible)
+            {
+                 loginView.Visibility = Visibility.Collapsed;
+                 resetPassword.Visibility = Visibility.Visible;
             }
         }
 

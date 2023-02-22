@@ -19,6 +19,8 @@ namespace AtlasShopping
         {
             ProductRepository repository = new ProductRepository();
             Product test = repository.GetProduct(100);
+            List<Product> testProducts = repository.GetProducts();
+            List<Product> testProductsByName = repository.GetProductsByName("master");
         }
     }
 }
