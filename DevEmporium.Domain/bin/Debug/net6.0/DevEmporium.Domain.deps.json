@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DevEmporium.Domain/1.0.0": {
+        "dependencies": {
+          "Chevalier.Utility": "1.0.0"
+        },
+        "runtime": {
+          "DevEmporium.Domain.dll": {}
+        }
+      },
+      "Chevalier.Utility/1.0.0": {
+        "runtime": {
+          "Chevalier.Utility.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevEmporium.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Chevalier.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
